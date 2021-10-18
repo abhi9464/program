@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Username: <input type="text" id="a1">
+    Account number: <input type="password" id="a1">
+    Password: <input type="password" id="a1">
+    Balance: <input type="numbers" id="a1">
+    <input type="submit" value="Enter" id="a1" onclick="detail()">
+    <input type="text" placeholder="display" id="disp">
+
+
+
+    <script>
+        let info=[];
+        let i=0;
+       
+
+        function detail()
+        {
+            info[i]=document.getElementById("a1").value;
+
+
+            disp();
+        }
+
+        function disp()
+        {
+            document.getElementById("disp").value= info;
+        }
+    </script>
+</body>
+</html>
